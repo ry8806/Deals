@@ -20,7 +20,7 @@ function SetupNewsletterSubscribe(publicAccountId, listName, formId, onSuccess) 
 jQuery(function () {
     SetupNewsletterSubscribe("d8f1e40a-8720-4345-8417-995a36a241d1", "Dealotto", "subForm", function () {
         // Do stuff here when it's done!
-        var newsLetter = $(".newsletter-inside");
+        var newsLetter = jQuery(".newsletter-inside");
         var htmlToInsert = '<h2><i class="fa fa-check-circle-o"></i> Thanks for subscribing!</h2>';
 
         newsLetter.find("h2").replaceWith(htmlToInsert);
